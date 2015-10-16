@@ -1,3 +1,6 @@
+package crownandanchor;
+
+
 public class Dice {
 			
 	private DiceValue value;
@@ -11,7 +14,8 @@ public class Dice {
 	}
 
 	public DiceValue roll() {
-		return DiceValue.getRandom();
+		value = DiceValue.getRandom();
+		return value;
 	}		
 	
 	public String toString() {
